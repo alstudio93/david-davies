@@ -3,29 +3,25 @@ export const NavLinkData = [
         title: 'Home',
         location: '/'
     },
-    {
-        title: 'About',
-        location: '/about'
-    },
+    // {
+    //     title: 'About',
+    //     location: '/#about'
+    // },
     {
         title: 'Estate Planning',
-        location: '/estate-planning'
+        location: '/estateplanning'
     },
     {
         title: 'Business Law',
-        location: '/business-law'
+        location: '/businesslaw'
     },
     {
         title: "Veteran's Planning",
-        location: '/veterans-planning',
+        location: '/veteransplanning',
     },
     {
         title: 'Elder Law',
-        location: '/elder-law'
-    },
-    {
-        title: 'Resources',
-        location: '/resources',
+        location: '/elderlaw'
     },
     {
         title: 'Contact',

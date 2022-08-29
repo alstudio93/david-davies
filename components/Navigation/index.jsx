@@ -3,8 +3,11 @@ import Link from 'next/link'
 import Image from "next/future/image"
 import { useTheme } from 'next-themes'
 import { NavLinkData } from './navLinkData'
+import { useRouter } from 'next/router'
+
 
 export const Navbar = () => {
+  const router = useRouter();
 
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -16,9 +19,9 @@ export const Navbar = () => {
 
   const LogoByTheme = () => {
     if (mounted && resolvedTheme === "light") {
-      return <Image src="/logo/davies-law-logo-black.png" height="120" width="250" />
+      return <Image src="/logo/davies-law-logo-black.png" height="200" width="250" alt="Davies Law, PLLC Logo" />
     } else if (mounted && resolvedTheme === "dark") {
-      return <Image src="/logo/davies-law-logo-white.png" height="120" width="250" className='w-48 xl:w-64' />
+      return <Image src="/logo/davies-law-logo-white.png" height="200" width="250" className='w-48 xl:w-64' alt="Davies Law, PLLC Logo" />
     }
   }
 
@@ -42,10 +45,9 @@ export const Navbar = () => {
 
             {NavLinkData.map((item) => (
               <li key={item.title}
-                className={item.title === "Login" && "mt-[14px] lg:mt-0"}
               >
                 <Link href={item.location}>
-                  <a className={`text-lg lg:text-lg font-garamond  text-slate-500 dark:text-slate-200 ${item.title === "Login" ? "login-btn text-slate-100 hover:text-slate-600 py-2 px-6 rounded-lg dark:hover:text-black" : ""}`} onClick={() => setToggleMobileMenu(false)}>
+                  <a className={`text-lg lg:text-lg font-garamond  text-slate-500 dark:text-slate-200 relative ${router.pathname === item.location ? "before:absolute before:-bottom-1 before:w-8 before:h-[2px] before:bg-slate-500  dark:before:bg-slate-200" : ""} `} onClick={() => setToggleMobileMenu(false)}>
                     {item.title}
                   </a>
                 </Link>

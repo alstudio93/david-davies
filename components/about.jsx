@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
 
-            <main className=" pt-10 mx-auto about-main-content font-garamond max-w-[850px] dark:text-slate-200">
+            <section id="about" className=" pt-10 mx-auto about-main-content font-garamond max-w-[850px] dark:text-slate-200">
                 <h2 className='text-center text-section-h2 '>A Message  from <br className='sm:hidden' /> David Davies</h2>
                 <div className='flex flex-col items-center px-4 py-6 lg:p-8 gap-y-8 md:block'>
 
@@ -67,7 +67,7 @@ const About = () => {
                         lifetimes. Therefore, it is our goal to turn these often complex problems into manageable solutions.
                     </p>
                 </div>
-            </main>
+            </section>
         </>
 
     )

@@ -1,8 +1,13 @@
 import Image from 'next/future/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
+import FAQ from '../FAQ'
 
 const VeteransPlanningHomeComp = () => {
+    const router = useRouter();
+    const page = router.pathname;
+
     return (
         <section className="grid px-2 py-[145px] lg:pt-48 mx-auto max-w-section">
             <h2 className='text-center text-section-h2'>Veterans&#39; Planning</h2>
@@ -18,7 +23,11 @@ const VeteransPlanningHomeComp = () => {
 
                 </div>
             </div>
-            <Link href="/business-law"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg w-52'>Learn More</a></Link>
+
+            {page !== "/veteransplanning" && <Link href="/veteransplanning"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg w-52 border-slate-400 dark:border-slate-200'>Learn More</a></Link>}
+
+            {page === "/veteransplanning" && <FAQ />}
+
         </section>
     )
 }

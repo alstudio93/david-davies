@@ -1,10 +1,14 @@
 import Image from 'next/future/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
+import FAQ from '../FAQ'
 
 const BusinessLawHomeComp = () => {
+    const router = useRouter();
+    const page = router.pathname;
     return (
-        <section className="grid px-2 mx-auto pt-[136px] lg:pt-44 max-w-section">
+        <section className={`grid px-2 mx-auto pt-[136px]  ${page ? "lg:pt-32" : "lg:pt-44"} max-w-section`}>
             <h2 className='text-center text-section-h2'>Business Law</h2>
             <div className='flex flex-col items-center justify-between pt-8 lg:flex-row-reverse'>
                 <Image src="/business-law.jpeg" width="500" height="500" className="rounded-lg" />
@@ -24,7 +28,10 @@ const BusinessLawHomeComp = () => {
 
                 </div>
             </div>
-            <Link href="/business-law"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg w-52'>Learn More</a></Link>
+
+            {page !== "/businesslaw" && <Link href="/businesslaw"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg border-slate-400 dark:border-slate-200 w-52 '>Learn More</a></Link>}
+
+            {page === "/businesslaw" && <FAQ />}
         </section>
     )
 }
