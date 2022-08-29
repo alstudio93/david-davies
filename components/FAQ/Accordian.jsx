@@ -28,7 +28,7 @@ const Accordian = ({
             {
                 <div className={clicked === index ? 'content accordian-active' : 'content'}
                 >
-                    <p className='text-base font-normal'>{desc}</p>
+                    <p className='pb-2 text-base font-normal'>{desc}</p>
 
                 </div>
             }
