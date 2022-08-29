@@ -89,7 +89,7 @@ const Contact = ({ homePage }) => {
                             <option>Estate Planning</option>
                             <option>Business Law</option>
                             <option>Elder Law</option>
-                            <option>Veterans' Planning</option>
+                            <option>Veterans Planning</option>
                         </select>
                     </fieldset>
 
