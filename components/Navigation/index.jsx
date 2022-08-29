@@ -47,7 +47,7 @@ export const Navbar = () => {
               <li key={item.title}
               >
                 <Link href={item.location}>
-                  <a className={`text-lg lg:text-lg font-garamond  text-slate-500 dark:text-slate-200 relative ${router.pathname === item.location ? "before:absolute before:-bottom-1 before:w-8 before:h-[2px] before:bg-slate-500  dark:before:bg-slate-200" : ""} `} onClick={() => setToggleMobileMenu(false)}>
+                  <a className={`text-xl lg:text-lg font-garamond  text-slate-500 dark:text-slate-200 relative ${router.pathname === item.location ? "before:absolute before:-bottom-1 before:w-full lg:before:w-8 before:h-[2px] before:bg-slate-500  dark:before:bg-slate-200" : ""} `} onClick={() => setToggleMobileMenu(false)}>
                     {item.title}
                   </a>
                 </Link>
