@@ -100,6 +100,8 @@ const Contact = ({ homePage }) => {
 
                     <button type="submit" className='col-span-2 px-3 py-1 mx-auto text-lg rounded-lg shadow-lg w-36 dark:shadow-none dark:border'>Submit</button>
                 </form>
+
+
             </section>
         </>
     )

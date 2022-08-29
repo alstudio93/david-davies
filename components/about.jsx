@@ -47,9 +47,9 @@ const About = () => {
 
                         An Estate Planning Attorney because they want to ensure that their family, their life’s work, and the
                         causes
-                        that they hold dear continue to be cared for after they are gone.
+                        that they hold dear continue to be cared for after they are gone,
 
-                        An Elder Law Attorney because they want to ensure that their parents or other loved ones receive the
+                        an Elder Law Attorney because they want to ensure that their parents or other loved ones receive the
                         best
                         possible care and comfort at a time when they can no longer provide those things for themselves.
 
