@@ -4,11 +4,11 @@ import React from 'react'
 
 const EstatePlanningHomeComp = () => {
     return (
-        <section className="grid px-2 mx-auto pt-[132px] max-w-section">
+        <section className="grid px-2 mx-auto pt-[132px] max-w-section ">
             <h2 className='text-center text-section-h2'>Estate Planning</h2>
             <div className='flex flex-col items-center justify-between pt-8 gap-y-10 lg:flex-row'>
                 <Image src="/estate-planning.jpg" width="500" height="500" className="rounded-lg" />
-                <div>
+                <div className='relative'>
                     <p className='max-w-3xl text-xl'>Estate Planning is the practice of making it plainly understood how you want your
                         estate to be managed after your death or if you no longer have capacity and are unable to deal
                         with things for yourself.</p>
@@ -24,6 +24,7 @@ const EstatePlanningHomeComp = () => {
                         <li>Contracts (several types)</li>
                         <li>Mortgages</li>
                     </ul>
+                    <div className='before:absolute before:shadow-contentShadow before:bottom-20 before:rounded-full before:right-20 before:blur before:opacity-20 lg:before:hidden' />
                 </div>
             </div>
             <Link href="/estate-planning"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg w-52'>Learn More</a></Link>

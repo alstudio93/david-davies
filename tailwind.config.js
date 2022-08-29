@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'lg': '2px 2px 10px -2px rgb(228, 228, 228)',
+        'contentShadow': '-86px -42px 179px 138px #fff',
       },
       fontSize: {
         'hero-h1': 'clamp(2rem, 7vw, 8rem)',
