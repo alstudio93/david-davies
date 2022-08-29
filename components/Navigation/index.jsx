@@ -41,7 +41,7 @@ export const Navbar = () => {
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
-          <ul id="navigationLinks" className={` xl:flex flex-row lg:items-center gap-x-5 bg-white dark:bg-black  ${toggleMobileMenu ? 'flex flex-col items-center pt-20 lg:pl-5 fixed top-20 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
+          <ul id="navigationLinks" className={` xl:flex flex-row lg:items-center gap-x-5 bg-white dark:bg-black  ${toggleMobileMenu ? 'flex flex-col items-center pt-[106px] lg:pl-5 fixed top-20 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
 
             {NavLinkData.map((item) => (
               <li key={item.title}
@@ -57,7 +57,7 @@ export const Navbar = () => {
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
-                className="relative flex items-center justify-center w-12 h-12 transition-all bg-gray-200 rounded-lg md:w-9 md:h-9 dark:bg-gray-600 hover:ring-2 ring-gray-300 top-5 xl:-top-0 "
+                className="relative flex items-center justify-center w-12 h-12 transition-all bg-gray-200 rounded-lg lg:w-9 lg:h-9 dark:bg-gray-600 hover:ring-2 ring-gray-300 top-5 xl:-top-0 "
                 onClick={() =>
                   setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
                 }
