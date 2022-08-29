@@ -19,9 +19,9 @@ export const Navbar = () => {
 
   const LogoByTheme = () => {
     if (mounted && resolvedTheme === "light") {
-      return <Image src="/logo/davies-law-logo-black.png" height="200" width="250" alt="Davies Law, PLLC Logo" />
+      return <Link href="/"><Image src="/logo/davies-law-logo-black.png" height="200" width="250" alt="Davies Law, PLLC Logo" /></Link>
     } else if (mounted && resolvedTheme === "dark") {
-      return <Image src="/logo/davies-law-logo-white.png" height="200" width="250" className='w-48 xl:w-64' alt="Davies Law, PLLC Logo" />
+      return <Link href="/"><Image src="/logo/davies-law-logo-white.png" height="200" width="250" className='w-48 xl:w-64' alt="Davies Law, PLLC Logo" /></Link>
     }
   }
 
