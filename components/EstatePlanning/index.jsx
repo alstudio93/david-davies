@@ -10,8 +10,8 @@ const EstatePlanningHomeComp = () => {
     return (
         <section id="estateplanning" className="grid px-2 mx-auto pt-[132px] lg:pt-44 max-w-section ">
             <h2 className=' dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b] text-center text-section-h2'>Estate Planning</h2>
-            <div className='flex flex-col items-center justify-between pt-8 gap-y-10 lg:flex-row'>
-                <Image src="/estate-planning.jpg" width="500" height="500" className="rounded-lg" />
+            <div className='flex flex-col items-center justify-between px-2 pt-8 gap-y-10 lg:flex-row lg:gap-x-10'>
+                <Image src="/estate-planning.jpg" width="500" height="500" className="rounded-lg lg:min-w-[500px]" />
                 <div className='relative'>
                     <p className='max-w-3xl text-xl'>Estate Planning is the practice of making it plainly understood how you want your
                         estate to be managed after your death or if you no longer have capacity and are unable to deal

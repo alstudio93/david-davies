@@ -10,8 +10,8 @@ const BusinessLawHomeComp = () => {
     return (
         <section className={`grid px-2 mx-auto pt-[136px]  ${page ? "lg:pt-32" : "lg:pt-44"} max-w-section`}>
             <h2 className='text-center text-section-h2 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b]'>Business Law</h2>
-            <div className='flex flex-col items-center justify-between pt-8 lg:flex-row-reverse'>
-                <Image src="/business-law.jpeg" width="500" height="500" className="rounded-lg" />
+            <div className='flex flex-col items-center justify-between px-2 pt-8 lg:flex-row-reverse gap-y-10 lg:gap-x-10'>
+                <Image src="/business-law.jpeg" width="500" height="500" className="rounded-lg lg:min-w-[500px]" />
                 <div className='relative'>
                     <p className='max-w-3xl text-xl'>Business law is the law that contains regulations and policies that govern
                         the actions of a business.</p>

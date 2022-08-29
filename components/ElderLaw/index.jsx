@@ -10,8 +10,8 @@ const ElderLawHomeComp = () => {
     return (
         <section className="grid px-2 pt-[145px] lg:pt-44 mx-auto max-w-section">
             <h2 className='text-center text-section-h2 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b]'>Elder Law</h2>
-            <div className='flex flex-col items-center justify-between pt-8 lg:flex-row'>
-                <Image src="/elder-law.jpeg" width="500" height="500" className="rounded-lg" />
+            <div className='flex flex-col items-center justify-between px-2 pt-8 lg:flex-row gap-y-10 lg:gap-x-10'>
+                <Image src="/elder-law.jpeg" width="500" height="500" className="rounded-lg lg:min-w-[500px]" />
                 <div className='relative'>
                     <p className='max-w-3xl text-xl'>Elder law is the field of law that covers the varied legal needs of aging
                         populations. Many people think this is an area of law that can be ignored until close to the
