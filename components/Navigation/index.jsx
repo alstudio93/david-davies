@@ -57,7 +57,7 @@ export const Navbar = () => {
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
-                className="relative flex items-center justify-center transition-all bg-gray-200 rounded-lg w-9 h-9 dark:bg-gray-600 hover:ring-2 ring-gray-300 top-5 xl:-top-0 "
+                className="relative flex items-center justify-center w-12 h-12 transition-all bg-gray-200 rounded-lg md:w-9 md:h-9 dark:bg-gray-600 hover:ring-2 ring-gray-300 top-5 xl:-top-0 "
                 onClick={() =>
                   setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
                 }
