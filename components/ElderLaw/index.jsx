@@ -4,11 +4,11 @@ import React from 'react'
 
 const ElderLawHomeComp = () => {
     return (
-        <section className="grid px-2 pt-[145px] mx-auto max-w-section">
+        <section className="grid px-2 pt-[145px] lg:pt-44 mx-auto max-w-section">
             <h2 className='text-center text-section-h2'>Elder Law</h2>
             <div className='flex flex-col items-center justify-between pt-8 lg:flex-row'>
                 <Image src="/elder-law.jpeg" width="500" height="500" className="rounded-lg" />
-                <div>
+                <div className='relative'>
                     <p className='max-w-3xl text-xl'>Elder law is the field of law that covers the varied legal needs of aging
                         populations. Many people think this is an area of law that can be ignored until close to the
                         time of retirement, but it is always a good idea to create a plan early.</p>
@@ -21,6 +21,8 @@ const ElderLawHomeComp = () => {
                         <li>Funding</li>
                         <li>Escrow Services</li>
                     </ul>
+                    <div className='before:absolute before:shadow-contentShadow before:bottom-20 before:rounded-full before:right-20 before:opacity-20 lg:before:hidden' />
+
                 </div>
             </div>
             <Link href="/business-law"><a className='px-3 py-2 mx-auto mt-10 text-lg text-center border rounded-lg w-52'>Learn More</a></Link>
