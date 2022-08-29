@@ -13,7 +13,7 @@ const Accordian = ({
 
             <div className='flex items-center justify-between w-full py-5 cursor-pointer' onClick={() => toggle(index)}>
                 {
-                    <h6 className='font-medium text-[0.95rem] md:text-lg leading-relaxed font-garamond w-[86%]'>
+                    <h6 className='font-medium text-xl md:text-lg leading-relaxed font-garamond w-[86%]'>
                         {title}
                     </h6>
                 }
@@ -28,7 +28,7 @@ const Accordian = ({
             {
                 <div className={clicked === index ? 'content accordian-active' : 'content'}
                 >
-                    <p className='font-normal text-[0.9rem] sm:text-base'>{desc}</p>
+                    <p className='text-base font-normal'>{desc}</p>
 
                 </div>
             }
