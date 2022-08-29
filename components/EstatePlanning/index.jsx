@@ -4,7 +4,7 @@ import React from 'react'
 
 const EstatePlanningHomeComp = () => {
     return (
-        <section className="grid px-2 pt-48 mx-auto max-w-section">
+        <section className="grid px-2 mx-auto pt-[132px] max-w-section">
             <h2 className='text-center text-section-h2'>Estate Planning</h2>
             <div className='flex flex-col items-center justify-between pt-8 gap-y-10 lg:flex-row'>
                 <Image src="/estate-planning.jpg" width="500" height="500" className="rounded-lg" />

@@ -38,7 +38,7 @@ export const Navbar = () => {
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
-          <ul id="navigationLinks" className={` xl:flex flex-row lg:items-center gap-x-5 bg-white  ${toggleMobileMenu ? 'flex flex-col items-center pt-20 lg:pl-5 fixed top-20 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
+          <ul id="navigationLinks" className={` xl:flex flex-row lg:items-center gap-x-5 bg-white dark:bg-black  ${toggleMobileMenu ? 'flex flex-col items-center pt-20 lg:pl-5 fixed top-20 left-0 right-0 min-h-screen dark:bg-black gap-y-5' : 'hidden'} `}>
 
             {NavLinkData.map((item) => (
               <li key={item.title}
