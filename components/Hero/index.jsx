@@ -19,7 +19,7 @@ const Hero = () => {
                 <h1 className='text-center text-hero-h1'>Davies Law Firm, PLLC</h1>
                 {/* <hr className='' /> */}
                 <h4 className='text-center text-hero-subtitle'>Protecting and Providing <br className='hidden xs:block' /> for Those You Love</h4>
-                {/* <Link href="/about"><a className=''>Read <span className='pl-2 font-bold before:content-[open-quote] after:content-[close-quote]'>A Message from David Davies</span></a></Link> */}
+                <Link href="/contact"><a className='px-4 py-2 border rounded-lg hero__cta'>Book a Consultation</a></Link>
             </div>
         </header>
     )

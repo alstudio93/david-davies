@@ -78,7 +78,7 @@ const FAQ = () => {
     return (
         <>
             <section id="faq" className='w-full pt-32 mx-auto max-w-section'>
-                <h2 className='text-transparent bg-clip-text bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b] font-garamond tracking-wide text-section-h2 text-center '>FAQ</h2>
+                <h2 className=' dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b] font-garamond tracking-wide text-section-h2 text-center '>FAQ</h2>
                 {PageFAQ()}
             </section>
         </>

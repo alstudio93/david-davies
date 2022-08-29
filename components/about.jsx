@@ -36,7 +36,7 @@ const About = () => {
                             placeholder="blur"
                         />
                     </div>
-                    <p className='lg:ml-4 '>
+                    <p className='text-lg lg:ml-4 '>
                         I am thankful that I get to serve selfless clients. Most attorneys who practice in other areas of the
                         law
                         could only dream of working with clients who are motivated not by their own greed and self interest, but
