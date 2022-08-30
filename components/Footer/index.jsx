@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='flex flex-col text-center lg:text-left gap-y-2' >
                     <h4 className='text-xl font-bold '>The Law Offices of David Davies, PLLC</h4>
 
-                    <p>1023 Main Street, Suite 202 Conway, AR 72032</p>
+                    <p>1972 Dave Ward Dr, Conway, AR 72032</p>
                     <p>(501) 358-4422 (Phone)</p>
                     <p>(501) 358-4933 (Fax)</p>
                 </div>

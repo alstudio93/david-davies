@@ -17,23 +17,20 @@ export default function Home() {
 
         <About />
 
-        <VerticleDivider adjustedTopLargeScreen="lg:top-[905px]" adjustedTopMobile="top-[60px]" />
-
-
-        {/* <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative' /> */}
+        <VerticleDivider class="lg:top-[75px] top-[60px]" />
 
         <EstatePlanningHomeComp />
 
-        <VerticleDivider />
+        <VerticleDivider class="top-20 lg:top-[88px]" />
 
         <BusinessLawHomeComp />
 
-        <VerticleDivider />
+        <VerticleDivider class="top-20 lg:top-[108px]" />
 
 
         <ElderLawHomeComp />
 
-        <VerticleDivider />
+        <VerticleDivider class="top-20 lg:top-[108px]" />
 
 
         <VeteransPlanningHomeComp />
