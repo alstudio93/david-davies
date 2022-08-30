@@ -3,10 +3,11 @@ import Navbar from './Navigation'
 import Head from 'next/head'
 
 const Layout = ({ children, title }) => {
+    const pageTitle = "Davies Law, PLLC | " + title;
     return (
         <>
             <Head>
-                <title>{"Davies Law, PLLC | " + title || "Davies Law Firm"}</title>
+                <title>{title && pageTitle || "Davies Law Firm"} </title>
                 <meta name="description" content="Davies Law Firm, PLLC - Protecting and Providing for Those You Love" />
                 <link rel="icon" href="/favicon/favicon.png" />
 
@@ -17,7 +18,6 @@ const Layout = ({ children, title }) => {
                 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
                 <meta name="msapplication-TileColor" content="#2d89ef" />
                 <meta name="theme-color" content="#ffffff" />
-
             </Head>
             <Navbar />
             <main className='dark:bg-black dark:text-slate-200 font-garamond'>
