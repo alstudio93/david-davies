@@ -1,7 +1,6 @@
 import Image from 'next/future/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React from 'react'
 import FAQ from '../FAQ'
 
 const VeteransPlanningHomeComp = () => {
@@ -10,6 +9,7 @@ const VeteransPlanningHomeComp = () => {
 
     return (
         <section className="grid px-2 py-[145px] lg:pt-48 mx-auto max-w-section">
+
             <h2 className='dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br from-[#bcbcbc] to-[#6b6b6b] text-center text-section-h2'>Veterans&#39; Planning</h2>
             <div className='flex flex-col items-center justify-between px-2 pt-8 lg:flex-row-reverse gap-y-10 lg:gap-x-10'>
                 <Image src="/veterans-planning.jpeg" width="500" height="500" className="rounded-lg lg:min-w-[500px]" />

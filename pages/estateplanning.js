@@ -1,4 +1,3 @@
-import React from 'react'
 import EstatePlanningHomeComp from '../components/EstatePlanning'
 import Layout from '../components/Layout'
 

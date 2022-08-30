@@ -16,7 +16,7 @@ export const NavLinkData = [
         location: '/businesslaw'
     },
     {
-        title: "Veteran's Planning",
+        title: "Veterans' Planning",
         location: '/veteransplanning',
     },
     {

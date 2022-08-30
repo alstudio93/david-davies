@@ -5,26 +5,39 @@ import EstatePlanningHomeComp from '../components/EstatePlanning'
 import BusinessLawHomeComp from '../components/BusinessLaw'
 import VeteransPlanningHomeComp from '../components/VeteransPlanning'
 import ElderLawHomeComp from '../components/ElderLaw'
+import VerticleDivider from '../components/VerticleDivider'
 
 export default function Home() {
   return (
     <>
 
       <Layout >
+
         <Hero />
+
         <About />
 
-        <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative top-[60px] lg:top-[85px] ' />
+        <VerticleDivider adjustedTopLargeScreen="lg:top-[905px]" adjustedTopMobile="top-[60px]" />
+
+
+        {/* <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative' /> */}
+
         <EstatePlanningHomeComp />
-        <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative top-20 lg:top-[108px] ' />
+
+        <VerticleDivider />
 
         <BusinessLawHomeComp />
-        <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative top-20 lg:top-[108px] ' />
+
+        <VerticleDivider />
+
 
         <ElderLawHomeComp />
-        <div className='h-[100px] w-[1px] bg-slate-300 dark:bg-white mx-auto relative top-20 lg:top-[108px] ' />
+
+        <VerticleDivider />
+
 
         <VeteransPlanningHomeComp />
+
       </Layout>
     </>
   )

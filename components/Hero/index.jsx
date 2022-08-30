@@ -1,6 +1,5 @@
 import Image from 'next/future/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Hero = () => {
     return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import ElderLawHomeComp from '../components/ElderLaw'
 import Layout from '../components/Layout'
 

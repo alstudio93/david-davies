@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../components/Layout'
 import VeteransPlanningHomeComp from '../components/VeteransPlanning'
 
